@@ -1,0 +1,65 @@
+Source: Bing.com
+
+Type: Semi-passive income
+
+Amount: 270 points per day/8100 per month
+	$0.26 per day/$7.71 per month
+	6 Accounts = $1.54 per day/ $46.29 per month
+
+Point Scale: 
+	$1=1050 points
+
+Rewards:
+	$5 Amazon gift card=5250 points
+	$10 Amazon giftcard=10,500 points
+
+Installation Instrctions:
+
+Download python
+Step 0: Download Python at: https://www.python.org/downloads/
+
+
+Download microsoft edge driver
+Step 1: Open microsoft edge
+Step 2: Click the 3 dots on top right(opens a drop down menu)
+Step 3: Click on Settings tab
+Step 4: Click on 'About Microsoft Edge' Tab
+Step 5: Look at the version of Microsoft Edge you have. (Example: Version 90.0.818.46 (Official build) (64-bit))
+Step 5: Go to: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/ 
+Step 6: Download the developer driver for your version.
+Step 7: Extract files and memorize the file location
+Step 8: Edit the python code around line 59
+	The code should be the following:
+	
+        	#Opens Edge Driver 
+        	PATH = "C:/Users/Capta/Documents/edgedriver_win64/msedgedriver.exe"
+        	driver = webdriver.Edge(PATH)
+        	driver.implicitly_wait(3)
+        	driver.get("https://bing.com/")
+
+Step 9: You want to replace the 'PATH' to where ever your microsoft edge driver is located. Mine is located at (C:\Users\Capta\Documents\edgedriver_win64\msedgedriver.exe)
+
+
+Download chrome driver
+Step 10: Open google chrome, and find out the version, its the same process finding it for microsoft edge
+Step 11: Head over to https://chromedriver.chromium.org/downloads and download the version for your chrome
+Step 12: Extract files and take note of where the files are.
+Step 13: Edit python code around line 161 and put in the location of your chromedriver.exe. Mine is in (C:/Users/Capta/Documents/chromedriver_win32/chromedriver.exe) 
+
+
+
+Install Seleniun library 
+Step 10: We need to install selenium. Open your python folder. Mine is at (C:\Users\Capta\AppData\Local\Programs\Python)
+Step 11: Open Scripts folder
+Step 12: Run pip.exe
+Step 13: Type in: pip install selenium
+
+Installation is now complete!! peepoHYPERS!
+
+Download words.txt(For version 3.0.0+)
+Step 14: Download the words.txt file and put it in the same folder as your python script.
+
+Run Instructions:
+Step 1: Edit BingAutoSearch V.2.0.0 and input accounts + # searches
+Step 2: Run BingAutoSearch V.2.0.0
+Step 3: Profit!
